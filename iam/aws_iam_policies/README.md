@@ -1,0 +1,4 @@
+- ecs_instance_policy_.json
+  - ECSのインスタンス用のIAMポリシーをjsonで記述したもの
+  - ECSのインスタンス用のIAMポリシー(aws_iam_policy.tf)でjsonが使用されarnが作られる
+  - ECSのインスタンス用のIAMポリシーアタッチメント(aws_iam_policy_attachment.tf)でroleに対してpolicyがアタッチされる
