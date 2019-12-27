@@ -1,0 +1,3 @@
+- ec2_assume_role_policy.json
+  - sts:AssumeRoleだけを許可するポリシー
+  - EC2用のIAMロールで使用され、そのIAMロールはIAMインスタンスプロファイル経由でEC2に適用される
