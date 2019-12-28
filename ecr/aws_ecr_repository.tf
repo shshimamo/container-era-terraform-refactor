@@ -1,4 +1,4 @@
-resource "aws_ecr_repository" "sample-image" {
-  # ECRのイメージ名を指定 
-  name = "sample-image"
+resource "aws_ecr_repository" "container-era-image" {
+  # ECRのイメージ名を指定
+  name = "container-era-image"
 }
