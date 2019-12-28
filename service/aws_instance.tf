@@ -24,4 +24,8 @@ resource "aws_instance" "container-era" {
     volume_size = "30"
     volume_type = "gp2"
   }
+
+  tags = {
+    Name = "container-era"
+  }
 }
