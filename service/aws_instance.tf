@@ -16,6 +16,8 @@ resource "aws_instance" "container-era" {
   user_data = file("./user_data.sh")
   associate_public_ip_address = true
 
+  key_name = aws_key_pair.auth.id
+
   vpc_security_group_ids = [
     "${aws_security_group.instance.id}"
   ]
@@ -28,4 +30,9 @@ resource "aws_instance" "container-era" {
   tags = {
     Name = "container-era"
   }
+}
+
+resource "aws_key_pair" "auth" {
+  key_name = var.key_name
+  public_key = file(var.public_key_path)
 }
