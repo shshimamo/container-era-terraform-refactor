@@ -7,3 +7,4 @@
   - portMappings: ポートマッピングを指定する
   - command: コンテナが実行するコマンドを配列で指定する
   - logConfiguration: ログをどこに出力するか設定する。awslogsを設定しCloudWatchLogsに出力するようにしている
+  - secrets: valueFromでssmパラメータストアに設定した名前を書き、nameでコンテナ内での環境変数名を書く
