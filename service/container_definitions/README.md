@@ -8,3 +8,8 @@
   - command: コンテナが実行するコマンドを配列で指定する
   - logConfiguration: ログをどこに出力するか設定する。awslogsを設定しCloudWatchLogsに出力するようにしている
   - secrets: valueFromでssmパラメータストアに設定した名前を書き、nameでコンテナ内での環境変数名を書く
+
+- migration.json
+  - サービスを動かす定義(service.json)とほぼ同じだがcommandとlogConfigurationのawslogs-stream-prefixをmigrationという文字列に変えている。
+  - streamのprefixを変えることでマイグレーションのログのみ表示できるようにするという意図。
+  - 問題の切り分け時にログを分けるのは有効なので覚えておくとよい
