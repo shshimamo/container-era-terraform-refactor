@@ -1,1 +1,31 @@
 ECSなどのサービスを提供するリソースを保存
+
+- "aws_acm_certificate"
+  - "shi4to":                       SSL証明書
+- "aws_cloudwatch_log_group"
+  - "container-era-service":        クラウドウォッチグループ
+- "aws_ecs_cluster"
+  - "container-era-ecs-cluster":    ECSクラスター
+- "aws_ecs_service"
+  - "container-era-service":        ECSサービス
+- "aws_ecs_task_definition"
+  - "container-era-task":           ECSタスク定義(Web用)
+  - "container-era-migration-task": ECSタスク定義(マイグレーション用)
+- "aws_instance"
+  - "container-era":                EC2インスタンス
+- "aws_key_pair"
+  - "auth":                         SSHに使うキーペア
+- "aws_lb"
+  - "lb":                           ロードバランサー
+- "aws_lb_listener"
+  - "http":                         ロードバランサーリスナー
+  - "https":                        ロードバランサーリスナー
+- "aws_lb_target_group"
+  - "http":                         ターゲットグループ
+- "aws_route53_record"
+  - "shi4to_certificate":           ルート53レコード
+  - "shi4to":                       ルート53レコード
+- "aws_security_group"
+  - "instance":                     セキュリティグループ
+  - "alb":                          セキュリティグループ
+  - "db":                           セキュリティグループ
